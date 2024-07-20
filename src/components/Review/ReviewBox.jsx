@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import ReviewModal from './ReviewModal';
 
-const ReviewBox = (movieId) => {
+const ReviewBox = ({movieId}) => {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const openModal = () => setIsModalOpen(true);
     const closeModal = () => setIsModalOpen(false);

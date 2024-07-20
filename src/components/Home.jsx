@@ -42,7 +42,7 @@ function Home() {
                                     <img src={movie.poster} alt={movie.title} className=" w-full h-[80vh] object-contain rounded-lg" />
                                 </div>
                                 <div className="flex flex-col justify-center lg:w-1/2 lg:ml-4">
-                                    <h5 className="text-lg font-bold md:text-center lg:text-left text-white">{movie.title}</h5>
+                                    <h5 className="text-lg font-bold md:text-center sm:text-center lg:text-left text-white">{movie.title}</h5>
                                     <div className="flex gap-3 lg:justify-normal sm:justify-center">
                                         <button onClick={() => handlePlayTrailer(movie.trailerLink)} className="mt-4 px-4 py-2 bg-yellow-500 text-white font-semibold rounded hover:bg-yellow-600 transition duration-300 self-center lg:self-start">
                                             Play Trailer
