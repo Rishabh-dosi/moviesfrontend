@@ -54,7 +54,7 @@ const ReviewModal = ({ onClose, movieId }) => {
                         </button>
                     </div>
                 </form>
-                
+                {reviews}
             </div>
         </div>
     );

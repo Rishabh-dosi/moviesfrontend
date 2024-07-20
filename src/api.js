@@ -13,7 +13,7 @@ export const getOneMovie = async (movieId) => {
 }
 export const addReview = async (req, res) => {
     try {
-        
+        // eslint-disable-next-line
         const response = await axios.post(`${baseURL}/api/reviews`, { body: req.body, imdbId: req.imdbId })
         
         return res;
