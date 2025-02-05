@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const baseURL = "https://moviesbackend-production-3742.up.railway.app"
+const baseURL = process.env.NODE_ENV == "development" ? "http://localhost:8080" : "https://moviesbackend-production-3742.up.railway.app"
 
 export const getMovies = async () => {
     const response = await axios.get(`${baseURL}/api/movies`);
